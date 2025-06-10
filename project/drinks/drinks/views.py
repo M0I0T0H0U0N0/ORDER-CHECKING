@@ -3,6 +3,10 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Drink
 from .serializer import DrinkSerializer
+from .models import Order
+from .serializer import OrderSerializer
+
+
 @api_view(['GET', 'POST'])
 def drink_list(request):
     if request.method == 'GET':
@@ -33,3 +37,11 @@ def drink_list(request):
             else:
                 print("incorrect passwrod")
                 return Response({"message": "Incorrect password"}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+@api_view(['GET', 'POST'])
+def order_list(request):
+    if request.method == 'GET':
+        drinks = Order.objects.all()
+        serializer = OrderSerializer(drinks, many=True)
+        return Response({'orders': serializer.data}, status=status.HTTP_200_OK)

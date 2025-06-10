@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import drink_list 
-
+from .views import order_list
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('drinks/',drink_list),
+    path('orders/',order_list),
+ 
     
 ]
