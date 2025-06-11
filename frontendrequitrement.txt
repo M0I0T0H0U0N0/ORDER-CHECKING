@@ -1,0 +1,3 @@
+pnpm add @shadcn/ui
+pnpm add @acternity/vortex
+npm install pnpm
