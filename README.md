@@ -43,24 +43,12 @@ This is a simple **Order Management** web application built using **React** for 
 
 
 
-## 📁 Project Structure
-
-```bash
-ORDER-CHECKING/
-│
-├── frontend/
-│   └── vite-project/        # React frontend using Vite
-│
-└── backend/
-    └── project/
-        └── drinks/          # Django backend with Django REST API
-
 
 ## Installation & Setup
 
 Follow these steps to run the project locally:
 
-## 📁 Project Structure
+
 ## 1. Clone the Repository
 
 ```bash
