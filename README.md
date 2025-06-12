@@ -41,7 +41,7 @@ This is a simple **Order Management** web application built using **React** for 
 
 > 🛑 **Backend functionality will not work on this hosted page**, since Firebase does not support Python or Django-based APIs.
 
----
+
 
 ## 📁 Project Structure
 
@@ -54,12 +54,13 @@ ORDER-CHECKING/
 └── backend/
     └── project/
         └── drinks/          # Django backend with Django REST API
+
+
 ## Installation & Setup
 
 Follow these steps to run the project locally:
 
----
-
+## 📁 Project Structure
 ## 1. Clone the Repository
 
 ```bash
