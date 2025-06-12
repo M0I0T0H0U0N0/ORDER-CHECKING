@@ -54,7 +54,7 @@ ORDER-CHECKING/
 └── backend/
     └── project/
         └── drinks/          # Django backend with Django REST API
-# Installation & Setup
+## Installation & Setup
 
 Follow these steps to run the project locally:
 
