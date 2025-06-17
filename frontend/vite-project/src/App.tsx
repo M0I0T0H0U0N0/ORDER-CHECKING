@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
-import Demo from "./parts/backgroundeffect";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Demo from './parts/backgroundeffect';         // Login page
+import CardHoverEffectDemo from './parts/order-page'; // Orders page
 
-
-function APP() {
-  
+function App() {
   return (
-    <div>
-      <Demo></Demo>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Demo />} />
+        <Route path="/orders" element={<CardHoverEffectDemo />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default APP;
+export default App;
